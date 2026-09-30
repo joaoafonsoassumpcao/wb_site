@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+/*
+ * Tokens tirados do site antigo (Elementor): títulos #54595F, texto #7A7A7A,
+ * laranja #FF9900, cinza escuro #444444. Mantém o visual igual ao WordPress.
+ */
+@theme {
+	--font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+
+	--color-brand: #ff9900;
+	--color-heading: #54595f;
+	--color-body: #7a7a7a;
+	--color-dark: #444444;
+	--color-navy: #152138;
+	--color-whatsapp: #00bc57;
+}
+
+body {
+	@apply bg-white font-sans text-[#333] antialiased;
+}
+
+/* Container "boxed" do Elementor: 1140px de conteúdo, 10px de respiro interno */
+@utility boxed {
+	@apply mx-auto w-full max-w-[1160px] md:px-[10px];
+}
+
+/* Tamanhos de título do Elementor (h2 32px, h4 24px, h5 20px; celular maior no h4/h5) */
+@utility t-h2 {
+	@apply text-[28px] leading-[1] font-normal text-heading md:text-[32px];
+}
+@utility t-h4 {
+	@apply text-[28px] leading-[1] font-normal text-heading md:text-[24px];
+}
+@utility t-h5 {
+	@apply text-[28px] leading-[1] font-normal text-heading md:text-[20px];
+}
+.t-h2 b,
+.t-h4 b,
+.t-h5 b {
+	@apply font-bold;
+}
+
+@utility t-body {
+	@apply text-base leading-6 text-body;
+}
+.t-body p + p {
+	margin-top: 14px;
+}
+
+/* Botão "pílula" padrão do site antigo */
+@utility btn {
+	@apply inline-flex items-center justify-center rounded-[25px] px-6 py-3 text-[15px] leading-[15px] font-medium text-white transition-opacity hover:opacity-90;
+}
+@utility btn-orange {
+	@apply btn bg-brand;
+}
+@utility btn-dark {
+	@apply btn bg-dark;
+}
+
+/* Separador curto (widget divider do Elementor) */
+@utility divider {
+	@apply mt-[35px] mb-[15px] block h-[3px] border-0 bg-brand;
+}
