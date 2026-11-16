@@ -148,7 +148,9 @@
 			</h2>
 			<span class="divider w-[100px]"></span>
 			<p class="mt-[20px] text-base leading-6">
-				Veja as opções para fazer sua denúncia: Ligue para os números: <br />
+				Veja as opções para fazer sua denúncia: preencha o
+				<a href="/contato#denuncia" class="font-bold text-brand">formulário do Canal de Denúncias</a>
+				(pode ser anônimo) ou ligue para os números: <br />
 				<a href="tel:+555135194565" class="font-bold text-brand">(51) 3519-4565</a> ou
 				<a href="tel:+5551996046033" class="font-bold text-brand">(51) 9960-46033</a>
 				<br /><br />
@@ -156,7 +158,8 @@
 				<a href="mailto:{CONTACT.ethicsEmail}" class="font-bold text-brand">{CONTACT.ethicsEmail}</a>
 			</p>
 		</div>
-		<div class="p-[10px]">
+		<div class="flex flex-wrap gap-[10px] p-[10px]">
+			<a href="/contato#denuncia" class="btn-orange mt-[10px]">Fazer denúncia online</a>
 			<a href="/compliance/fluxograma-denuncia.pdf" target="_blank" rel="noopener" class="btn-orange mt-[10px]">
 				Fluxograma Denúncia
 			</a>

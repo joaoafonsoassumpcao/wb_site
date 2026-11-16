@@ -16,7 +16,14 @@ const LEGACY_REDIRECTS: Record<string, string> = {
 	'/password-reset': INTRA_URL,
 	'/wp-login.php': INTRA_URL,
 	'/wp-admin': INTRA_URL,
-	'/ola-mundo': '/'
+	'/ola-mundo': '/',
+	// Portal de denúncias do WordPress antigo: hoje é uma seção da página de contato.
+	'/denuncia': '/contato#denuncia',
+	'/denuncias': '/contato#denuncia',
+	'/canal-de-denuncia': '/contato#denuncia',
+	'/canal-de-denuncias': '/contato#denuncia',
+	'/portal-de-denuncias': '/contato#denuncia',
+	'/canal-de-etica': '/contato#denuncia'
 };
 
 export const handle: Handle = async ({ event, resolve }) => {
